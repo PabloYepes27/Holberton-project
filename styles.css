@@ -1,0 +1,588 @@
+ *{ margin: 0; padding: 0; font-family:"Helvetica Neue", helvetica, arials, sans !important;}
+ 
+ a{
+    color: #000;
+    text-decoration: none;
+ }
+
+ body{
+     width: 90vw;
+     margin: auto;
+     align-content: center;
+     /*FLEXBOX*/
+     display: flex; /*Mandatory*/
+     flex-direction: column; /*Mandatory*/
+ }
+
+ body .body-cont header{
+     height: auto !important;
+     padding: 0 !important;
+     display: block;
+     width: 100%;
+     color: #000 !important;
+ }
+
+ body .body-cont header .logo-menu{
+     height: 100%;
+     width: 100%;
+     text-align: center;
+     background-color: rgba(0,0,0,0.2);
+     box-shadow: 0 0 40px rgba(0,0,0,0.7);
+     /*FLEXBOX*/
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ body .body-cont header .logo-menu .logo{
+     padding-left: 30px;
+     font-family: helvetica,arial,sans;
+     font-weight: bolder;
+     text-align: center;
+     width: 30%;
+     /*FLEXBOX*/
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .logo h1{
+     display: inline;
+     font-weight: bolder;
+     font-size: 50px;
+     color: #000 !important;
+ }
+
+ .logo p{
+     display: inline;
+     font-weight: bolder;
+     text-align: center;
+     font-size: 25px;
+     color: #000 !important;
+ }
+
+ body .body-cont header .logo-menu .menu{
+     width: 80%;
+     padding-right: 20px;
+     font-size: larger;
+     font-weight: bolder;
+     text-align: right;
+ }
+
+ body .body-cont header .logo-menu .menu .link:hover{
+     color: rgba(0,0,0,0.2)!important;
+ }
+
+ body .body-cont header .cover-photo{
+     width: 100%;
+     height: 100%;
+     display: block;
+     overflow: hidden;
+     margin: auto;
+     padding: 0;
+ }
+
+ .cover-photo img{
+     box-shadow: 0 0 40px rgba(0,0,0,0.8);
+     width: 100%;
+     height: auto;
+     min-height: 100%;
+ }
+
+ body .body-cont header .logo-menu .menu .hidden-menu{
+     border: 2px solid rgba(0,0,0,0.5);
+     border-radius: 5px;
+     font-size: 40px;
+     padding: 0 10px;
+     margin: 10px 0;
+     display: none;
+ }
+
+
+ 
+ /* Main inside Body - Mandatory */
+ 
+ /* Main container who is divided in two columns (container1 and container2) */
+
+ main{
+     box-shadow: 0 0 40px rgba(0,0,0,0.8);
+     overflow: hidden;
+     background-color: #ddd;
+     /*FLEXBOX*/
+     display: flex; /* Mandatory */
+     flex: auto; /* Mandatory */
+     flex-direction: row; /*Mandatory*/
+ }
+
+ /* Container left wich will be divided in two rows, the top one is the first-section and the bot one is second-section */
+
+ main .container1{
+     flex: 1 1 75%;
+     display: block;
+ }
+
+ /* Article inside main  Mandatory */
+
+ main .container1 article{
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     flex: 2; /* Mandatory */
+     overflow-y: auto; /* Mandatory */
+ }
+
+ /* Top Container wich contains three boxes called third-section */
+
+ main .container1 article .first-section{
+     box-shadow: 0 0 20px rgba(0,0,0,0.5);
+     width: auto;
+     height: auto;
+     /*FLEXBOX*/
+     display: flex;
+ }
+
+ main .container1 article .first-section .third-section{
+     padding: 20px 40px;
+     width: calc(33.333% + 1%);
+     text-align: justify !important;
+     flex: 1 1 100%;
+     align-items: center;
+ }
+
+ main .container1 article .first-section .third-section a{
+     text-decoration: none !important;     
+ }
+
+ main .container1 article .first-section .third-section h2{
+     font-weight: bolder;
+     text-align: center;
+ }
+
+ main .container1 article .first-section .third-section p{
+     text-align: left !important;
+ }
+
+ main .container1 article .first-section .third-section .author{
+     text-align: right !important;
+     font-weight: bold;
+     margin-right: 20px;
+ }
+
+ /* Bot container wich contains two sections*/
+
+ main .container1 article .second-section{
+     width: auto;
+     height: auto;
+     /*FLEXBOX*/
+     display: flex;
+ }
+
+ main .container1 article .second-section .image-section{
+     flex: 1 1 60%;
+     max-width: 100%;
+     height: auto;
+ }
+
+ /* Container who have a link to go to the blog and a little form for conect with the contact page */
+
+ main .container1 article .second-section .imgblog-contact{
+     width: 40%;
+     height: auto;
+     text-align: center;
+     padding: 150px 0;
+     background-color: rgba(0,0,0,0.1);
+     /*FLEXBOX*/
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-flow: column nowrap;
+ }
+
+ main .container1 article .second-section .imgblog-contact .imgblog{
+     height: auto;
+ }
+
+ main .container1 article .second-section .imgblog-contact .contact{
+     height: auto;
+ }
+
+ main .container1 article .second-section .imgblog-contact .contact h3{
+     font-size: 40px;
+     font-weight: bolder;
+     padding: 40px 0;
+ }
+
+ main .container1 article .second-section .imgblog-contact .contact p{
+     font-size: 20px;
+     padding: 20px 0;
+ }
+
+ main .container2{
+     flex: 1 1 25%;
+ }
+
+ /* Aside inside main - Mandatory */
+
+ main .container2 aside{
+     height: 100%;
+     background-color: rgba(0,0,0,0.2);
+     box-shadow: 0 0 20px rgba(0,0,0,0.5);
+     flex: 1; /*Mandatory*/
+     overflow-y: auto; /*Mandatory*/
+ }
+
+ footer{
+     margin: 0 !important;
+     padding: 20px;
+     height: auto;
+     box-shadow: 0 0 40px rgba(0,0,0,0.7);
+     background-color: rgba(0,0,0,0.2);
+     /*FLEXBOX*/
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ footer p{
+     margin: 0 !important;
+ }
+
+ footer a{
+     color: #000;
+     font-weight: bolder;
+ }
+
+ footer a img{
+     width: 30px;
+     height: 30px;
+ }
+
+
+
+
+
+ /* HERE ENDS index.html PART AND START tweets.html*/
+
+
+
+
+
+ main .container1 article .first-section .profile{
+     margin: 20px 20px;
+     align-items: center;
+     padding: 20px;
+     text-align: justify;
+     font-size: 15px;
+     width: 40%;
+     height: 20%;
+     background-color: #EBEBEB;
+ }
+
+ main .container1 article .first-section .profile img{
+     padding: 0 5px 5px 0;
+     height: 200px;
+     width: 150px;
+     float: left;
+ }
+
+ main .container1 article .first-section .profile h3{
+     padding: 0 0 10px 5px;
+     margin:0;
+     font-weight: bolder;
+ }
+
+ main .container1 article .first-section .profile .quote{
+     font-weight: bolder;
+     text-align: right;
+ }
+
+ main .container1 article .blog-container{
+     /*FLEXBOX*/
+     display: flex;
+     flex-direction: column;
+     align-content: center;
+     justify-content: space-around;
+ }
+
+ main .container1 article .blog-container h2{
+     text-align: center;
+     font-weight: bolder;
+     font-size: 40px;
+ }
+
+ main .container1 article .blog-container .post{
+     padding: 20px 40px;
+     text-align: left !important;
+     background-color: #EBEBEB;
+     border: solid 1px rgba(0,0,0,0.2);
+     /*FLEXBOX*/
+     display: flex;
+     flex-direction: row;
+     flex: 1 1 100%;
+ }
+
+ main .container1 article .blog-container .post .date{
+     text-align: center;
+     font-weight: bolder;
+     flex: 1 1 10%;
+ }
+
+ main .container1 article .blog-container .post .pic{
+     flex: 1 1 18%;
+ }
+
+ main .container1 article .blog-container .post .content{
+     padding-left: 20px;
+     padding-right: 100px;
+     text-align: left;
+     flex: 1 1 60%;
+ }
+
+ main .container1 article .tweets{ 
+     justify-content: center;
+     width: 50% !important; /*I need to move it in the middle of the container*/
+ }
+
+
+
+
+ /*HERE ENDS tweets.html PART AND START abilities.html*/
+
+
+
+
+ main .container1 article .abilities{
+     padding: 0 20px;
+     background-color: #EBEBEB;
+     border: solid 1px rgba(0,0,0,0.2);
+     /*FLEXBOX*/
+     display: flex;
+     flex-direction: row;
+ }
+
+ main .container1 article .abilities .content{
+     padding: 10px 100px 0 10px;
+     text-align: justify;
+     flex: 1 1 80%;
+ }
+
+ main .container1 article .abilities img{
+     padding: 20px;
+     flex: 1 1 20%;
+     width: 200px;
+     height: 150px;
+ }
+
+ main .container1 article h2{
+     text-align: center;
+     margin-top: 10px;
+     font-weight: bolder;
+     font-size: 40px;
+ }
+
+
+
+
+ /*HERE ENDS abilities.html PART AND START services.html*/
+
+
+
+
+
+ main .container1 article .first-section .service{
+     padding: 20px 40px;
+     width: calc(33.333% , 1%);
+     background-color: #EBEBEB;
+     border: solid 1px rgba(0,0,0,0.2);
+     /*FLEXBOX*/
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+
+ main .container1 article .first-section .service img{
+     padding-left: 20px;
+     justify-content: center;
+ }
+
+ main .container1 article .first-section .service h3{
+     font-weight: bolder;
+     text-align: center;
+     font-size: 20px;
+     padding-bottom: 20px;
+ }
+
+ main .container1 article .first-section .service p{
+     padding: 20px;
+     text-align: left;
+ }
+
+
+
+ /*HERE ENDS services.html PART AND START portfolio.html*/
+
+
+
+ main .container1 article .portfolio{
+     padding: 0 20px;
+     background-color: #EBEBEB;
+     border: solid 1px rgba(0,0,0,0.2);
+     /*FLEXBOX*/
+     display: flex;
+     flex-direction: row;
+ }
+
+ main .container1 article .portfolio .content{
+     padding: 10px 100px 0 10px;
+     text-align: justify;
+     flex: 1 1 80%;
+ }
+
+ main .container1 article .portfolio img{
+     padding: 20px;
+     flex: 1 1 20%;
+ }
+
+ main .container1 article .warning{
+     text-align: center;
+     margin-top: 20px;
+     font-weight: bolder;
+     font-size: 40px;
+ }
+
+ main .container1 article .advice{
+     text-align: justify;
+     margin: 10px 20px;
+     font-size: 20px;
+ }
+
+
+
+
+ /*HERE ENDS portfolio.html PART AND START contact.html*/
+
+
+
+
+
+ .btn{
+     border-radius: 3px;
+     display: inline-block;
+     padding: 20px 15px;
+     text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+     box-shadow: 3px 3px 0 rgba(0,0,0,0.5);
+ }
+
+ .btn-gray{
+     color: rgba(0,0,0,0.7);
+     background-color: rgba(0,0,0,0.2);
+ }
+
+ .btn-gray:hover{
+     background-color: rgba(0,0,0,0.5);
+ }
+
+ main .container1 article .contact-form form{
+     margin: auto;
+     padding: 10px;
+     width: 300px;
+ }
+
+ main .container1 article .contact-form form p{
+     margin-top: 20px;
+ }
+
+ input, textarea{
+     outline: none;
+     border: 0;
+     width: 200px;
+ }
+
+ .field{
+     border: solid 1px #ccc;
+     padding: 10px;
+ }
+
+ main .container1 article h1{
+     text-align: center;
+ }
+     
+     
+
+
+
+ /* Hello, it's me... but no Adele, just me Pablo and I have something to tell you ---->
+
+All the time during my presentation I've been cheking the requirements and following the instruction (Even as I wrote the code I also wrote "Mandatory" after each one), but I just realized that I made a mistake :'( ......
+
+In the Foro, our peer called "Carole_bou_ibms" had the kindness of remember us the Mandatory part in a list, wich reads as follows:
+
+
+1- Does your website have at least 4 pages?  CHECK
+2- Does the <header> have links to all your pages?  CHECK
+3- Does the <header> have at least Facebook and Twitter share buttons? CHECK
+4- Does the <main> have an <article> and an <aside> CHECK
+5- Does the <footer> have the "Made by [You] for Holberton School" paragraph? CHECK
+6- Did you link your pages to the required CSS and JS files? CHECK
+7- Does Index.html have at least 4 paragraphs? CHECK 
+8- Does index.html make use of <h1,2,3> headers? CHECK
+9- Does index.html have a clickable image? CHECK
+10- Do you have a tweets page with at least one embedded tweet? CHECK
+11- Did you add the class="works_on_smartphones" on the <body> tag and adjust the "viewport" to make it rendered nicely on smartphones?  ******
+12- Did you check your code errors with the official W3validator? CHECK 
+13- Does it meet the Flexbox requirement described in the tutorial? CHECK
+14- If you expiremented with ositioning, did you do so only within the <article> ******
+15- DOes one of your page have a clickable thumbnail? CHECK
+16- Did you have a peer review your website? CHECK
+17- Did you build anything extra? CHECK
+
+
+****** that was my first try with CSS, and in the course I was studying during the holberton test, they said the importance of the containers, that's why I made the mistake of puttin inside the containers the article and the aside, because what I understood was the importante to respect the structure like this
+
+    HEADER 
+ARTICLES ASIDE
+    FOOTER
+
+So, that is what I've always tried to do with the Flexbox, but I really canÂ´t to make the page responsive, so that is why  I had to resort to using mediaquery. If it is a mistake I really hope you give me the oportunity to pass on level 3 and try my best to show you how much I really want to be in Holberton
+    
+
+
+/* MEDIAQUERYS EWITHOUT LIBRARIES*/
+
+
+ @media (max-width: 1140px){
+     body .body-cont header .logo-menu .menu .hidden-menu{
+   display: inline-block !important;
+   font-size: 40px;
+     }
+     body .body-cont header .logo-menu .menu ul.menu-bar{
+   display: none;
+     }
+     body .body-cont header .logo-menu .menu ul.menu-bar.active{
+   display: block;
+   align-content: center;
+     }
+     body .body-cont header .logo-menu .menu{
+   position: relative;
+     }
+     body .body-cont header ul.menu-bar{
+   position: absolute;
+   top: 80px;
+   left: 0;
+   right: 0;
+   background: rgba(0,0,0,0.9);
+   text-align: center;
+     }
+     body .body-cont header ul.menu-bar li{
+   margin: 0;
+   width: 100%;
+   border-top: 1px solid rgba(0,0,0,0.3);
+     }
+     header ul li a{
+   display: block;
+   color: rgba(256,256,256,0.8);
+   padding: 10px 0 10px 0;
+   font-weight: 100;
+   border-top: 1px solid rgba(256,256,256,0.5);
+   border-bottom: 1px solid rgba(256,256,256,0.5);
+     }
+ }
